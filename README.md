@@ -22,12 +22,13 @@
 - PS4Database & JustGaming
 - NextGenUpdates
 - DarkSoftware
+- Custom Protocol
+- PlayStationHaX.xyz
 
 ### Invites to: 
 If you represent any of the following sites and would like to participate/be removed from this list, contact me on Twitter [@_AlAzif](https://twitter.com/_AlAzif)
 - Elotrolado
 - Logic Sunrise
-- PlayStationHax.xyz
 - PSX-Place
 - PSXHAX
 - /r/PS4Homebrew
