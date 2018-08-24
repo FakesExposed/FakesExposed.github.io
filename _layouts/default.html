@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
-{%- include head.html -%}
-<body>
-{%- include header.html -%}
-<pre>
-<code>
-{% include data.json %}
-</code>
-</pre>
-{%- include footer.html -%}
-</body>
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    {{ content }}
+
+    {%- include footer.html -%}
+
+  </body>
+
 </html>
