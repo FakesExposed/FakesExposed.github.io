@@ -2,4 +2,81 @@
 layout: default
 title: "Fakes.Exposed"
 ---
-Coming Soon!
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Fakes.Exposed</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/profiles">Profiles</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="frontpage-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+          <h2 class="mt-4">What We Do</h2>
+          <p>This site is a middle ground for PlayStation scene sites to identify user who create clickbait or fake content meant to mislead the community or generate revenue from said content.</p>
+          <p>A "profile" is created for accused (with proof) users where site representitives can endorse if they believe that user falls into this category.</p>
+          <br>
+          <p>Currently under development is a browser extension that will block/redirect a users content thus depriving them of views.</p>
+          <p>
+            <a class="btn btn-primary btn-lg" href="#">View Profiles &raquo;</a>
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <h2 class="mt-4">Participating Sites</h2>
+          <a href="#">SCE.Party</a><br>
+          <a href="#">PS4Database</a> &amp; <a href="#">JustGaming</a><br>
+          <a href="#">NextGenUpdates</a><br>
+          <a href="#">DarkSoftware</a><br>
+          <a href="#">Custom Protocol</a><br>
+          <a href="#">PlayStationHaX.xyz</a><br>
+          <a href="#">ConsoleHax</a><br>
+          <a href="#">GamesandConsoles</a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2>Browser Extensions</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-2 my-4"></div>
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/300x200" alt="Firefox">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+        <div class="col-sm-4 my-4">
+          <div class="card">
+            <img class="card-img-top" src="http://placehold.it/300x200" alt="Chrome">
+            <div class="card-img-overlay"></div>
+          </div>
+        </div>
+        <div class="col-sm-2 my-4"></div>
+      </div>
+
+    </div>
