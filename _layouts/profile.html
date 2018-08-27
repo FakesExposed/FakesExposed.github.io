@@ -79,6 +79,14 @@
           </div>
         </div>
         {% endif %}
+        <div class="row">
+          <div class="col-sm-8 mx-auto">
+            <h4>Sites</h4>
+            {% for entry in page.sites}
+            {{ entry }}
+            {% endfor %}
+          </div>
+        </div>
       </div>
 
     {%- include footer.html -%}
