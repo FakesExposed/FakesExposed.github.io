@@ -31,10 +31,10 @@
 ### Invites to:
 If you represent any of the following sites and would like to participate/be removed from this list, contact me on Twitter [@_AlAzif](https://twitter.com/_AlAzif)
 - Elotrolado
+- HackInformer
 - Logic Sunrise
 - PSX-Place
 - PSXHAX
 - /r/PS4Homebrew
 - GBATemp
-- Wololo
 - Think you should be on this list? Let us know
