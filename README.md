@@ -18,16 +18,17 @@
 - An announcement/link of your site participation on your site/twitter/etc is desirable (It's kinda the point), but not required
 
 ### Currently Participating Sites:
-- SCE.Party
-- PS4Database & JustGaming
-- NextGenUpdates
-- DarkSoftware
-- Custom Protocol
-- PlayStationHaX.xyz
 - ConsoleHax
+- Custom Protocol
+- DarkSoftware
 - GamesandConsoles
+- NextGenUpdates
+- PS4Database & JustGaming
+- PlayStationHaX.xyz
+- SCE.Party
+- Wololo
 
-### Invites to: 
+### Invites to:
 If you represent any of the following sites and would like to participate/be removed from this list, contact me on Twitter [@_AlAzif](https://twitter.com/_AlAzif)
 - Elotrolado
 - Logic Sunrise
