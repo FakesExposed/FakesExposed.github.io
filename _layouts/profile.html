@@ -66,7 +66,11 @@
         <div class="row">
           <div class="col-sm-8 mx-auto">
             <h4>Links</h4>
-            <p class="ml-2"></p>
+            <ul>
+              {% for link in page.links %}
+              <li><a href="{{ link }}">{{ link }}</a></li>
+              {% endfor %}
+            </ul>
           </div>
         </div>
         {% endif %}
@@ -79,7 +83,6 @@
               <li><a href="{{ "/files/" | append: file | absolute_url }}">{{ file }}</a></li>
               {% endfor %}
             </ul>
-            <p class="ml-2"></p>
           </div>
         </div>
         {% endif %}
