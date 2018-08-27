@@ -6,10 +6,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item{% if post.active == "home" %}{{ ' active' }}{% endif %}">
+              <li class="nav-item{% if page.active == "home" %} active{% endif %}">
                 <a class="nav-link" href="/">Home</a>
               </li>
-              <li class="nav-item{% if post.active == "profile" %}{{ ' active' }}{% endif %}">
+              <li class="nav-item{% if page.active == "profile" %} active{% endif %}">
                 <a class="nav-link" href="/profiles">Profiles</a>
               </li>
             </ul>
