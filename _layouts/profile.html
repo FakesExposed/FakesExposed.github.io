@@ -74,6 +74,11 @@
         <div class="row">
           <div class="col-sm-8 mx-auto">
             <h4>Files</h4>
+            <ul>
+              {% for file in page.files %}
+              <li><a href="{{ "/files/" | append: file | absolute_url }}">{{ file }}</a></li>
+              {% endfor %}
+            </ul>
             <p class="ml-2"></p>
           </div>
         </div>
