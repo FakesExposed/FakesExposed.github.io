@@ -89,9 +89,11 @@
         <div class="row">
           <div class="col-sm-8 mx-auto">
             <h4>Sites</h4>
-            {% for site in page.sites %}
-            {% include site.html name=site.name vote=site.vote %}
-            {% endfor %}
+            <div class="row">
+              {% for site in page.sites %}
+              {% include site.html name=site.name vote=site.vote %}
+              {% endfor %}
+            </div>
           </div>
         </div>
       </div>
