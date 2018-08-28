@@ -90,7 +90,7 @@
           <div class="col-sm-8 mx-auto">
             <h4>Sites</h4>
             {% for site in page.sites %}
-            {% inclide site.html name=site.name vote=site.vote %}
+            {% include site.html name=site.name vote=site.vote %}
             {% endfor %}
           </div>
         </div>
