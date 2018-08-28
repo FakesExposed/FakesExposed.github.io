@@ -1,0 +1,14 @@
+<div class="col-sm-4">
+  <div class="card">
+    <div class="card-body">
+      {% if include.vote == "yay" %}
+      <i class="fa fa-check" aria-hidden="true"></i>
+      {% else if include.vote == "nay" %}
+      <i class="fa fa-times" aria-hidden="true"></i>
+      {% else %}
+      <i class="fa fa- ellipsis-h" aria-hidden="true"></i>
+      {% endif %}
+      {{ include.name }}
+    </div>
+  </div>
+</div>
