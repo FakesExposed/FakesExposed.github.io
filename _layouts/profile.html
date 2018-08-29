@@ -94,11 +94,11 @@
             {% assign abstain = 0 %}
             {% for site in page.sites %}
             {% if site.vote == "yay" %}
-            {%  %}
+            {% yay | plus: 1  %}
             {% elsif site.vote == "nay" %}
-            {%  %}
+            {%  nay | plus: 1 %}
             {% else %}
-            {%  %}
+            {% abstain | plus: 1  %}
             {% endif %}
             {% endfor %}
             <small>Yay: {{ yay }}, Nay: {{ nay }}, Abstain: {{ abstain }}</small>
