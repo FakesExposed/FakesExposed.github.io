@@ -1,13 +1,7 @@
 # Fakes Exposed
 
 ### Site Rules
-0. "Fake" will be define as "Clickbait or fake content meant to mislead the community or generate revenue from said content"
-1. No words will be put in a site's mouth, they are free to abstain from voting yay/nay or participating at all
-     - A site's vote will be shown for each accused user's profile page
-2. Sites can change their vote at any time
-3. If a profile has no yays the profile will be removed
-4. Sites that appear to be complicit with promoting/shielding fake content will be removed
-5. Evidence must be provided to bring forward an accusation.
+Currently under discussion by participating sites
 
 ### Chat Rules (Private)
 1. Keep discussion limited to fakes.exposed
@@ -27,14 +21,3 @@
 - PlayStationHaX.xyz
 - SCE.Party
 - Wololo
-
-### Invites to:
-If you represent any of the following sites and would like to participate/be removed from this list, contact me on Twitter [@_AlAzif](https://twitter.com/_AlAzif)
-- Elotrolado
-- HackInformer
-- Logic Sunrise
-- PSX-Place
-- PSXHAX
-- /r/PS4Homebrew
-- GBATemp
-- Think you should be on this list? Let us know
