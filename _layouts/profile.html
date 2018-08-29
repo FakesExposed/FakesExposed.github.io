@@ -92,16 +92,18 @@
             {% assign yay = 0 %}
             {% assign nay = 0 %}
             {% assign abstain = 0 %}
+            {% assign total = 0 %}
             {% for site in page.sites %}
+            {% assign total = total | plus:1 %}
             {% if site.vote == "yay" %}
             {% assign yay = yay | plus:1  %}
             {% elsif site.vote == "nay" %}
             {% assign nay = nay | plus:1 %}
             {% else %}
-            {% assign abstain = abstain | plus:1  %}
+            {% assign abstain = abstain | plus:1 %}
             {% endif %}
             {% endfor %}
-            <small>Yay: {{ yay }}, Nay: {{ nay }}, Abstain: {{ abstain }}</small>
+            <small>Yay: {{ yay }}, Nay: {{ nay }}, Abstain: {{ abstain }}, Total: {{ total }}</small>
             <div class="row">
               {% for site in page.sites %}
               {% include site.html name=site.name vote=site.vote %}
