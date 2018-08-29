@@ -89,6 +89,19 @@
         <div class="row">
           <div class="col-sm-8 mx-auto">
             <h4>Sites</h4>
+            {% assign yay = 0 %}
+            {% assign nay = 0 %}
+            {% assign abstain = 0 %}
+            {% for site in page.sites %}
+            {% if site.vote == "yay" %}
+            {%  %}
+            {% elsif site.vote == "nay" %}
+            {%  %}
+            {% else %}
+            {%  %}
+            {% endif %}
+            {% endfor %}
+            <small>Yay: {{ yay }}, Nay: {{ nay }}, Abstain: {{ abstain }}</small>
             <div class="row">
               {% for site in page.sites %}
               {% include site.html name=site.name vote=site.vote %}
