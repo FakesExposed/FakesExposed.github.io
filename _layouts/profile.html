@@ -88,7 +88,7 @@
         {% endif %}
         <div class="row">
           <div class="col-sm-8 mx-auto">
-            <h4>Sites</h4>
+            <h4>At a Glance</h4>
             {% assign yay = 0 %}
             {% assign nay = 0 %}
             {% assign abstain = 0 %}
@@ -103,7 +103,12 @@
             {% assign abstain = abstain | plus:1 %}
             {% endif %}
             {% endfor %}
-            <small>Yay: {{ yay }}, Nay: {{ nay }}, Abstain: {{ abstain }}, Total: {{ total }}</small>
+            <p>Yay: {{ yay }}, Nay: {{ nay }}, Abstain: {{ abstain }}, Total: {{ total }}</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-8 mx-auto">
+            <h4>Sites</h4>
             <div class="row">
               {% for site in page.sites %}
               {% include site.html name=site.name vote=site.vote %}
