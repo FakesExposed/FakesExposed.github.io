@@ -12,10 +12,8 @@
           <div class="col-sm-6 mx-auto">
             <img class="rounded-circle img-fluid d-block mx-auto" src="{{ page.avatar }}" alt="{{ page.username }}">
             <h3 class="text-center">{{ page.username }}</h3>
-            <div class="progress">
-              <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-              <div class="progress-bar bg-secondary" role="progressbar" style="width: 25%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress mb-4">
+              {% include glance.html sites=sites %}
             </div>
           </div>
         </div>
@@ -91,26 +89,6 @@
           </div>
         </div>
         {% endif %}
-        <div class="row">
-          <div class="col-sm-8 mx-auto">
-            <h4>At a Glance</h4>
-            {% assign yay = 0 %}
-            {% assign nay = 0 %}
-            {% assign abstain = 0 %}
-            {% assign total = 0 %}
-            {% for site in page.sites %}
-            {% assign total = total | plus:1 %}
-            {% if site.vote == "yay" %}
-            {% assign yay = yay | plus:1  %}
-            {% elsif site.vote == "nay" %}
-            {% assign nay = nay | plus:1 %}
-            {% else %}
-            {% assign abstain = abstain | plus:1 %}
-            {% endif %}
-            {% endfor %}
-            <p>Yay: {{ yay }}, Nay: {{ nay }}, Abstain: {{ abstain }}, Total: {{ total }}</p>
-          </div>
-        </div>
         <div class="row">
           <div class="col-sm-8 mx-auto">
             <h4>Sites</h4>
