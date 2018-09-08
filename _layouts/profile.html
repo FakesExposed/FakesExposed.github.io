@@ -112,7 +112,7 @@
             <h4>Sites</h4>
             <div class="row">
               {% for site in page.sites %}
-              {% include site.html name=site.name vote=site.score %}
+              {% include site.html name=site.name score=site.score %}
               {% endfor %}
             </div>
           </div>
