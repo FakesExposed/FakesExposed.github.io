@@ -9,7 +9,7 @@ permalink: "/profiles"
     {% for post in site.posts %}
     <div class="col-lg-4 col-sm-6 text-center mb-4">
       <a href="{{ post.permalink }}">
-        <img class="rounded-circle img-fluid d-block mx-auto" src="{{ post.avatar }}" alt="{{ post.username }}">
+        <img class="rounded-circle d-block mx-auto" style="height: 200px; width: 200px;" src="{{ post.avatar }}" alt="{{ post.username }}">
         <h3>{{ post.username }}</h3>
       </a>
     </div>
