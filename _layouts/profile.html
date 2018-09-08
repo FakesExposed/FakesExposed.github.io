@@ -10,7 +10,11 @@
       <div class="container my-4">
         <div class="row">
           <div class="col-sm-6 mx-auto">
-            <img class="rounded-circle img-fluid d-block mx-auto" src="{{ page.avatar }}" alt="{{ page.username }}">
+            {% if page.avatar and page.avatar != "" and page.avatar != nil %}
+            <img class="rounded-circle img-fluid d-block mx-auto" src="{{ "/images/avatars/" | append: page.avatar | absolute_url }}" alt="{{ page.username }}">
+            {% else %}
+            <img class="rounded-circle img-fluid d-block mx-auto" src="{{ "/images/avatars/blank.png" | absolute_url }}" alt="{{ page.username }}">
+            {% endif %}
             <h3 class="text-center">{{ page.username }}</h3>
             {% include glance.html sites=page.sites %}
           </div>
@@ -70,29 +74,33 @@
             <ul>
               {% for link in page.links %}
               {% if link.link and link.link != "" and link.link != nil %}
+              <li>
               {% if link.notes and link.notes != "" and link.notes != nil %}
-              <li><a href="{{ link.link }}" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="{{ link.notes }}">{{ link.link }}</a></li>
+              <a href="{{ link.link }}" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="{{ link.notes }}">{{ link.link }}</a>
               {% else %}
-              <li><a href="{{ link.link }}">{{ link.link }}</a></li>
+              <a href="{{ link.link }}">{{ link.link }}</a>
               {% endif %}
+              </li>
               {% endif %}
               {% endfor %}
             </ul>
           </div>
         </div>
         {% endif %}
-        {% if page.files and page.files != "" and page.files != nil and page.files != [] %}
+        {% if page.files and page.files != "" and page.files != nil %}
         <div class="row">
           <div class="col-sm-8 mx-auto">
             <h4>Files</h4>
             <ul>
               {% for file in page.files %}
               {% if file.file and file.file != "" and file.file != nil %}
+              <li>
               {% if file.notes and file.notes != "" and file.notes != nil %}
-              <li><a href="{{ "/files/" | append: file.file | absolute_url }}" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="{{ file.notes }}">{{ file.file }}</a></li>
+              <a href="{{ "/files/" | append: file.file | absolute_url }}" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="{{ file.notes }}">{{ file.file }}</a>
               {% else %}
-              <li><a href="{{ "/files/" | append: file.file | absolute_url }}">{{ file.file }}</a></li>
+              <a href="{{ "/files/" | append: file.file | absolute_url }}">{{ file.file }}</a>
               {% endif %}
+              </li>
               {% endif %}
               {% endfor %}
             </ul>
@@ -104,7 +112,7 @@
             <h4>Sites</h4>
             <div class="row">
               {% for site in page.sites %}
-              {% include site.html name=site.name vote=site.vote %}
+              {% include site.html name=site.name vote=site.score %}
               {% endfor %}
             </div>
           </div>
