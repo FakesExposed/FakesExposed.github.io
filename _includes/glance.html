@@ -13,7 +13,7 @@
 {% else %}
   {% assign color = "" %}
 {% endif %}
-<p class="mx-auto">Trustworthiness:</p>
+<div class="mx-auto">Trustworthiness:</div>
 <div class="progress mb-4">
   <div class="progress-bar{{ color }}" role="progressbar" style="width: {{ percent }}%" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100"></div>
   <small class="justify-content-center d-flex position-absolute w-100">{{ percent }}%</small>
