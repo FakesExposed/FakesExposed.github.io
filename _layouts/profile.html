@@ -81,7 +81,13 @@
             <h4>Files</h4>
             <ul>
               {% for file in page.files %}
+              {% if file.file and file.file != "" and file.file != nil %}
+              {% if file.notes and file.notes != "" and file.notes != nil %}
               <li><a href="{{ "/files/" | append: file.file | absolute_url }}" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="{{ file.notes }}">{{ file.file }}</a></li>
+              {% else %}
+              <li><a href="{{ "/files/" | append: file.file | absolute_url }}">{{ file.file }}</a></li>
+              {% endif %}
+              {% endif %}
               {% endfor %}
             </ul>
           </div>
