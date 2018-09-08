@@ -15,7 +15,7 @@
             {% include glance.html sites=page.sites %}
           </div>
         </div>
-        {% if page.aliases And page.aliases != "" And page.aliases != nil %}
+        {% if page.aliases and page.aliases != "" and page.aliases != nil %}
         <div class="row">
           <div class="col-sm-8 mx-auto">
             <h4>Aliases</h4>
@@ -23,7 +23,7 @@
           </div>
         </div>
         {% endif %}
-        {% if page.bio And page.bio != "" And page.bio != nil %}
+        {% if page.bio and page.bio != "" and page.bio != nil %}
         <div class="row">
           <div class="col-sm-8 mx-auto">
             <h4>Bio</h4>
@@ -31,7 +31,7 @@
           </div>
         </div>
         {% endif %}
-        {% if page.gallery And page.gallery != "" And page.gallery != nil %}
+        {% if page.gallery and page.gallery != "" and page.gallery != nil %}
         <div class="row">
           <div class="col-sm-8 mx-auto">
             <h4>Gallary</h4>
@@ -63,19 +63,25 @@
           </div>
         </div>
         {% endif %}
-        {% if page.links And page.links != "" And page.links != nil %}
+        {% if page.links and page.links != "" and page.links != nil %}
         <div class="row">
           <div class="col-sm-8 mx-auto">
             <h4>Links</h4>
             <ul>
               {% for link in page.links %}
+              {% if link.link and link.link != "" and link.link != nil %}
+              {% if link.notes and link.notes != "" and link.notes != nil %}
               <li><a href="{{ link.link }}" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="{{ link.notes }}">{{ link.link }}</a></li>
+              {% else %}
+              <li><a href="{{ link.link }}">{{ link.link }}</a></li>
+              {% endif %}
+              {% endif %}
               {% endfor %}
             </ul>
           </div>
         </div>
         {% endif %}
-        {% if page.files And page.files != "" And page.files != nil %}
+        {% if page.files and page.files != "" and page.files != nil and page.files != [] %}
         <div class="row">
           <div class="col-sm-8 mx-auto">
             <h4>Files</h4>
