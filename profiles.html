@@ -6,7 +6,6 @@ permalink: "/profiles"
 ---
 <div class="container mt-4">
   <div class="row">
-    {% site.posts | sort: "username" %}
     {% for post in site.posts %}
     <div class="col-lg-4 col-sm-6 text-center mb-4">
       <a href="{{ post.permalink }}">
