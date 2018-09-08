@@ -5,6 +5,13 @@
 {% assign score = score | plus:site.score %}
 {% endfor %}
 {% assign percent = score | time:100.0 | divide_by:total | round %}
+{% if percent < 33 %}
+  {% assign color = " bg-danger" %}
+{% elsif percent > 66 %}
+  {% assign color = " bg-success" %}
+{% else %}
+  {% assign color = "" %}
+{% endif %}
 <div class="progress mb-4">
-  <div class="progress-bar bg-danger" role="progressbar" style="width: {{ percent }}%" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar{{ color }}" role="progressbar" style="width: {{ percent }}%" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
