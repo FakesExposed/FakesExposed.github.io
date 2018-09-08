@@ -6,10 +6,15 @@ permalink: "/profiles"
 ---
 <div class="container mt-4">
   <div class="row">
+    {{ site.posts | sort: "username" }}
     {% for post in site.posts %}
     <div class="col-lg-4 col-sm-6 text-center mb-4">
       <a href="{{ post.permalink }}">
-        <img class="rounded-circle d-block mx-auto" style="height: 200px; width: 200px;" src="{{ post.avatar }}" alt="{{ post.username }}">
+        {% if post.avatar and post.avatar != "" and post.avatar != nil %}
+        <img class="rounded-circle d-block mx-auto" style="height: 200px; width: 200px;" src="{{ "/images/avatars/" | append: post.avatar | absolute_url }}" alt="{{ post.username }}">
+        {% else %}
+        <img class="rounded-circle d-block mx-auto" style="height: 200px; width: 200px;" src="{{ "/images/avatars/blank.png" | absolute_url }}" alt="{{ post.username }}">
+        {% endif %}
         <h3>{{ post.username }}</h3>
       </a>
     </div>
