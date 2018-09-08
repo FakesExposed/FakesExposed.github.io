@@ -12,9 +12,7 @@
           <div class="col-sm-6 mx-auto">
             <img class="rounded-circle img-fluid d-block mx-auto" src="{{ page.avatar }}" alt="{{ page.username }}">
             <h3 class="text-center">{{ page.username }}</h3>
-            <div class="progress mb-4">
-              {% include glance.html sites=page.sites %}
-            </div>
+            {% include glance.html sites=page.sites %}
           </div>
         </div>
         {% if page.aliases And page.aliases != "" And page.aliases != nil %}
@@ -44,11 +42,11 @@
                 {% assign i = i | plus:1 %}
                 {% if i == 1 %}
                 <div class="carousel-item active">
-                  <img class="d-block w-100" src="{{ "/images/gallery/" | append: entry | absolute_url }}">
+                  <img class="d-block w-100" src="{{ "/images/gallery/" | append: entry.image | absolute_url }}">
                 </div>
                 {% else %}
                 <div class="carousel-item">
-                  <img class="d-block w-100" src="{{ "/images/gallery/" | append: entry | absolute_url }}">
+                  <img class="d-block w-100" src="{{ "/images/gallery/" | append: entry.image | absolute_url }}">
                 </div>
                 {% endif %}
                 {% endfor %}
@@ -71,7 +69,7 @@
             <h4>Links</h4>
             <ul>
               {% for link in page.links %}
-              <li><a href="{{ link }}">{{ link }}</a></li>
+              <li><a href="{{ link.link }}" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="{{ link.notes }}">{{ link.link }}</a></li>
               {% endfor %}
             </ul>
           </div>
@@ -83,7 +81,7 @@
             <h4>Files</h4>
             <ul>
               {% for file in page.files %}
-              <li><a href="{{ "/files/" | append: file | absolute_url }}">{{ file }}</a></li>
+              <li><a href="{{ "/files/" | append: file.file | absolute_url }}" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="{{ file.notes }}">{{ file.file }}</a></li>
               {% endfor %}
             </ul>
           </div>
