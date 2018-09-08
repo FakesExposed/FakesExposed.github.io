@@ -5,9 +5,10 @@
 {% assign score = score | plus:site.score %}
 {% endfor %}
 {% assign percent = score | time:100.0 | divide_by:total | round %}
-{% if percent < 33 %}
+<!-- TODO: Fade from red to green as percentage goes up -->
+{% if percent <= 33 %}
   {% assign color = " bg-danger" %}
-{% elsif percent > 66 %}
+{% elsif percent >= 66 %}
   {% assign color = " bg-success" %}
 {% else %}
   {% assign color = "" %}
