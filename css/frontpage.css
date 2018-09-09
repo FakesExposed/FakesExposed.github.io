@@ -39,11 +39,7 @@ body {
 }
 
 .progress {
-  background: rgba(245, 245, 245, 1);
-  border: 1px solid rgba(0, 0, 0, 1);
-}
-
-.progress-bar-custom {
+  position: relative;
   background: rgb(255, 0, 0);
   background: -moz-linear-gradient(left, rgba(255, 0, 0, 1) 0%, rgba(0, 255, 0, 1) 100%);
   background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 0, 0, 1)), color-stop(100%, rgba(0, 255, 0, 1)));
@@ -52,4 +48,14 @@ body {
   background: -ms-linear-gradient(left, rgba(255, 0, 0, 1) 0%, rgba(0, 255, 0, 1) 100%);
   background: linear-gradient(to right, rgba(255, 0, 0, 1) 0%, rgba(0, 255, 0, 1) 100%);
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#00ff00', GradientType=1);
+  border: 1px solid rgba(0, 0, 0, 1);
+}
+
+.progress-bar-custom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(245, 245, 245, 1);
+  width: 0;
 }
