@@ -5,8 +5,9 @@
 {% assign score = score | plus:site.score %}
 {% endfor %}
 {% assign percent = score | time:100.0 | divide_by:total | round %}
+{% assign inverse = 100 | minus:percent %}
 <div class="text-center">Trustworthiness:</div>
 <div class="progress mb-4">
-  <div class="progress-bar-custom" role="progressbar" style="width: {{ percent }}%" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100"></div>
+  <div class="progress-bar-custom" role="progressbar" style="width: {{ inverse }}%" aria-valuenow="{{ percent }}" aria-valuemin="0" aria-valuemax="100"></div>
   <small class="justify-content-center d-flex position-absolute w-100">{{ percent }}%</small>
 </div>
