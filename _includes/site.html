@@ -1,18 +1,16 @@
 <div class="col-sm-4 mb-2">
   {% if include.score >= 7 %}
   <div class="card card-success">
-    <div class="card-body">
-      <i class="fa fa-check" aria-hidden="true"></i>
   {% elsif include.score <= 3 %}
   <div class="card card-danger">
-    <div class="card-body">
-      <i class="fa fa-times" aria-hidden="true"></i>
   {% else %}
   <div class="card">
-    <div class="card-body">
-      <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
   {% endif %}
-      {{ include.name }}
+    <div class="card-body">
+      <div class="row">
+        <div class="d-inline px-2" style="border-right: 1px solid;">{{ include.score }}</div>
+        <div class="d-inline px-2">{{ include.name }}</div>
+      </div>
     </div>
   </div>
 </div>
