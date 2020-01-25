@@ -25,7 +25,7 @@ links: [
 ]
 files: [
     # Files are linked from `/files/` directory by filename. Do not use HTML in notes
-    { file: "fakeUSBShit.zip", notes: "Fake USB mod files for 7.02" }
+   # { file: "fakeUSBShit.zip", notes: "Fake USB mod files for 7.02" }
 ]
 
 # -----------------------------------------------------------------------------
