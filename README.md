@@ -17,7 +17,7 @@ Currently under discussion by participating sites
 - DarkSoftware
 - GamesandConsoles
 - NextGenUpdates
-- PS4Database & JustGaming
+- PS4Database
 - PlayStationHaX.xyz
 - SCE.Party
 - Wololo
