@@ -3,7 +3,7 @@
 
 username: "xHardHeMPuS" # Proper entity name with capitalization, spaces, special characters, etc
 permalink: "/profiles/xhardhempus" # Safe permalink based on the username (Lowercase & URI Decode), need to automate this
-avatar: "/images/avatars/xhardhempus.png" # Filename of the entity's avatar uploaded to `/images/avatars/` directory, it will be displayed at 200px*200px. Will be `/images/avatars/blank.png` if commented out/blank
+avatar: "xhardhempus.png" # Filename of the entity's avatar uploaded to `/images/avatars/` directory, it will be displayed at 200px*200px. Will be `/images/avatars/blank.png` if commented out/blank
 
 aliases: ["xHard"] # Entity's other aliases
 
