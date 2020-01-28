@@ -26,10 +26,10 @@ links: [
     { link: "https://archive.is/wip/uL8d8", notes: "Link to their fake forum" }
 ]
 
-files: [
+#files: [
     # Files are linked from `/files/` directory by filename. Do not use HTML in notes
     # { file: "fakeUSBShit.zip", notes: "Fake USB mod files for 7.02" }
-]
+#]
 
 # -----------------------------------------------------------------------------
 
